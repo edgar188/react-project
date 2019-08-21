@@ -2,6 +2,7 @@
   "name": "information-platform",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://edgar188.github.io/react-project/",
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.2.1",
@@ -18,6 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,6 +45,6 @@
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-redux": "^3.0.1",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.1.1"
   }
 }
