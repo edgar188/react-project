@@ -8,7 +8,6 @@ import "firebase/firestore";
 export default function SignUp(props) {
 
     const DB = firebase.firestore();
-
     const [firstname, setFirstname] = useState("")
     const [lastname, setLastname] = useState("")
     const [email, setEmail] = useState("")
