@@ -74,20 +74,14 @@ export default function Footer() {
             <div>
                 <div id="subsGit"><p>Subscribe Us On GitHub.</p></div>
                 <div id="github">
-                    <Link to="//github.com/BaghdasaryanHayk" target="_blank">
-                        <img src={githubLogoLight} alt="GitHub Link" />
-                    </Link>
                     <Link to="//github.com/harut0111" target="_blank">
                         <img src={githubLogoDark} alt="GitHub Link" />
                     </Link>
                     <Link to="//github.com/edgar188" target="_blank">
                         <img src={githubLogoLight} alt="GitHub Link" />
                     </Link>
-                    <Link to="//github.com/ArmanShirinyan" target="_blank">
-                        <img src={githubLogoDark} alt="GitHub Link" />
-                    </Link> 
                 </div>
-                    <div><p style={{ color: "silver" }}>Copyright &#9400; 2019 | HB.HM.EH.AS | All Rights Reserved.</p></div>
+                    <div><p style={{ color: "silver" }}>Copyright &#9400; 2019 | HM-EH | All Rights Reserved.</p></div>
             </div>
             </div>
         </footer>

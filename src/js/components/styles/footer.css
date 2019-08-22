@@ -56,8 +56,8 @@ footer textarea {
 
 #github {
   display: flex;
-  justify-content: space-around;
-  max-width: 70%;
+  justify-content: space-evenly;
+  max-width: 50%;
   margin: 8px auto 10px auto;
 }
 
