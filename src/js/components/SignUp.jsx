@@ -122,9 +122,9 @@ export default function SignUp(props) {
 
             <p style={{ fontSize: 12 }}>Select your group</p>
         
-            <button type="submit" value="Registre" id="regButton">Registre</button>
+            <button type="submit" value="Registre" id="regButton">REGISTRY</button>
 
-            <button type="button" value="Back" onClick={props.swtich} id="backButton">Back</button>
+            <button type="button" value="Back" onClick={props.swtich} id="backButton">BACK</button>
             
           </form>
        </div>
