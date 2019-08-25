@@ -1,8 +1,8 @@
 {
   "name": "information-platform",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://edgar188.github.io/react-project/",
+  "private": true,
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "@material-ui/icons": "^4.2.1",

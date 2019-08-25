@@ -1,11 +1,12 @@
 #homeArticle {
     background-color: #fff;
-    max-width: 80%;
+    max-width: 90%;
     margin: 30px auto 0 auto;
+    border: 3px solid #3B5998;
+    border-radius: 5px;
 }
 
 .article {
-    border: 1px solid silver;
     padding-bottom: 20px;
 }
 
@@ -16,7 +17,7 @@
 }
 
 .article h3 {
-  color: grey;
+  color: #3b5998;
   margin: 10px 0;
   text-align: left;
   padding: 0 20px;

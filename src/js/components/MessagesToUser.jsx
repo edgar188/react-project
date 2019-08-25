@@ -4,8 +4,12 @@ import "./styles/home.css";
 import noMessages from "../../img/noMessages.png";
 import sendMsgIcon from '../../img/sendMsg.png';
 import deleteMsgIcon from '../../img/deleteMsg.png';
+import tickLogo from "../../img/tick.png";
+import cancelLogo from "../../img/cancel.png";
+// Material UI packages --------------------------------------
 import { makeStyles } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
+// -----------------------------------------------------------
 
 export default function MessagesToUser() {
     const [userId, setUserId] = useState(""),
@@ -65,7 +69,7 @@ export default function MessagesToUser() {
                                 }
                             }
                         }
-                        console.log(tempArr);
+                        //console.log(tempArr);
                         // console.log(tempArr);
                         if (JSON.stringify(data) !== JSON.stringify(tempArr)) {
                             setData([...tempArr]);
@@ -101,7 +105,7 @@ export default function MessagesToUser() {
 
         fire.firestore().collection("User_text").doc(id).delete()
         .then(() => {
-            console.log("Successfully removed !");
+            //console.log("Successfully removed !");
         })
         .catch(e => {console.log(e.message)});
     }
@@ -121,7 +125,7 @@ export default function MessagesToUser() {
         textarea.value = "";
         if (!text) {
             textarea.style.borderColor = "red";
-            setTimeout(() => {textarea.style.borderColor = "grey"}, 500);
+            setTimeout(() => { textarea.style.borderColor = "#3B5998"}, 500);
         } 
         else {
            let aboutUserId = e.target.getAttribute("data-id");
@@ -134,7 +138,7 @@ export default function MessagesToUser() {
                 dateCreated: new Date()
             })
             .then(() => {
-                alert("Message successfully sended.");
+                //alert("Message successfully sended.");
             })
             .catch(e => {
                 console.log("Error writing document: ", e);
@@ -176,7 +180,7 @@ export default function MessagesToUser() {
                                 <textarea rows="4"
                                     cols="10"
                                     placeholder={`Hi ${val.name} !`}
-                                    style={{ maxHeight: 35, minHeight: 35 }} />
+                                    style={{ maxHeight: 60, minHeight: 60 }} />
                                 <br />
                                 <button onClick={onResponseSend}
                                     data-id={val.id}> SEND
@@ -190,70 +194,22 @@ export default function MessagesToUser() {
     }
     else if(isLoaded === "Empty") {
         return (
-            <div id="toReferPage" className="noMessages">
-                 <h3 style={{ marginTop: 20, textDecoration: "underline" }}>
+            <div id="toReferPageMessToUser" className="noMessages" style={{padding:10}}>
+                 <h2 style={{ marginTop: 20, textDecoration: "underline" }}>
                      You haven't messages !
-                 </h3>
+                 </h2>
                  <img src={noMessages} alt="You haven't messages" />
              </div>
         )
     }
     else return (
-        <div id="toReferPage">
+        <div id="toReferPageMessToUser">
             <div>
                 <CircularProgress className={classes.progress} />
                 <CircularProgress className={classes.progress} color="secondary" />
                 <CircularProgress className={classes.progress} />
             </div>
         </div>
-        )
-    
-
-    //return (
-       
-        // !isLoaded ? (
-        //     <div id="toReferPage" className = "noMessages">
-        //         <h3 style={{ marginTop: 20, textDecoration: "underline" }}>
-        //             You haven't messages !
-        //         </h3>
-        //         <img src={noMessages} alt="You haven't messages" />
-        //     </div>
-        // ) : (
-        //     <div id="toReferPageMessToUser">
-        //         <h2>Аll messages sent to you !</h2>
-        //             {data.map( val => (
-        //                 <div id="messagesToUser" key={val.evenId}>
-        //                     <h2>{`${val.name} ${val.surname}`}</h2>
-        //                     <h5>{`(Group: ${val.group}, Age: ${val.age})`}</h5>
-        //                     <h6>{`${val.date}`}</h6>
-        //                     <hr />
-        //                     <div id="paragWrapper">
-        //                         <p>{val.text}</p>
-        //                         <div className="icons">
-        //                             <img className="sendMsgIcon" 
-        //                                 src={sendMsgIcon} 
-        //                                 alt="SendMsgIcon" 
-        //                                 onClick={onResponseMsg}/>
-        //                             <img className="deleteMsgIcon" src={deleteMsgIcon} 
-        //                                 alt="DeleteMsgIcon" 
-        //                                 onClick={onRemMsg} 
-        //                                 data-id={val.evenId} />
-        //                         </div>
-        //                         <div className="responseMsg" style={{ display: "none" }}>
-        //                             <textarea rows="4" 
-        //                                     cols="10" 
-        //                                     placeholder={`Hi ${val.name} !`} 
-        //                                     style={{maxHeight: 35, minHeight: 35}} />
-        //                             <br />
-        //                             <button onClick={onResponseSend}
-        //                                     data-id={val.id}> SEND
-        //                             </button>
-        //                         </div>
-        //                     </div>
-        //                 </div>
-        //             ))}
-        //     </div>
-        // )
-    //)  
+    )
 }
 
