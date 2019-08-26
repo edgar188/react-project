@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4aa68b13bacfb58cd3143bf7cdbf0ba5",
+    "revision": "89c912f238fdbff1f8d51fa1370fe03f",
     "url": "/react-project/index.html"
   },
   {
-    "revision": "3bfbe3fb1e048a73ce2e",
-    "url": "/react-project/static/css/main.169b9c4d.chunk.css"
+    "revision": "27ac071eeebb1e27486b",
+    "url": "/react-project/static/css/main.758a867c.chunk.css"
   },
   {
-    "revision": "13fed2d73f9489969278",
-    "url": "/react-project/static/js/2.20fd2aa6.chunk.js"
+    "revision": "6c2368af30ca03c9699a",
+    "url": "/react-project/static/js/2.bbed4f2e.chunk.js"
   },
   {
-    "revision": "3bfbe3fb1e048a73ce2e",
-    "url": "/react-project/static/js/main.61a1a1ea.chunk.js"
+    "revision": "27ac071eeebb1e27486b",
+    "url": "/react-project/static/js/main.3109c711.chunk.js"
   },
   {
     "revision": "c38e84bee75be2db3df6",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-project/static/media/adminBG.d7901de0.jpg"
   },
   {
-    "revision": "c17991b6f8c3742117f5551aed5397e6",
-    "url": "/react-project/static/media/backToHome.c17991b6.jpg"
+    "revision": "89b04cfeee3f042d13d1b732979c666b",
+    "url": "/react-project/static/media/backToHome2.89b04cfe.png"
   },
   {
     "revision": "b11c7feb6108dadee0724938d09e74a8",
@@ -44,12 +44,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-project/static/media/mainBG.dac9ff92.jpeg"
   },
   {
-    "revision": "d6250fdf5df33dc1899a1350b1fff1bd",
-    "url": "/react-project/static/media/msgToMe.d6250fdf.jpg"
-  },
-  {
     "revision": "4e2d0a8ada46a19b7b598e574d5025c7",
     "url": "/react-project/static/media/sendText.4e2d0a8a.jpg"
+  },
+  {
+    "revision": "5175e9374db379feeb812c5a910b28b1",
+    "url": "/react-project/static/media/sms.5175e937.png"
   },
   {
     "revision": "9a7202975c27e7dca0bf306035423bad",
