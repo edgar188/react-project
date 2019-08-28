@@ -38,7 +38,7 @@ export default function SendText() {
             setIsLoaded(true);
         })
         .catch(e => {console.log(e.message, "Catch error.")});
-    }, [userId]);
+    });
 
     const onSelectChange = e => {
         e.preventDefault();
@@ -52,7 +52,7 @@ export default function SendText() {
     
     const onSendClick = e => {
         e.preventDefault();
-        if(!text)  {
+        if(!text.trim())  {
             document.getElementById("textarea").style.border = "2px solid red";
             document.getElementById("cancelLogoSendText").style.visibility = "visible";
             setTimeout(() => {
@@ -73,7 +73,6 @@ export default function SendText() {
             setTimeout(() => {
                 document.getElementById("tickLogoSendText").style.visibility = "hidden";
             }, 500);
-            //alert("Text successfully sended!");
             //console.log("Message successfully written!");
             //console.log(data);
         })
