@@ -2,7 +2,7 @@ import React from "react";
 import MainLeftSide from "./MainLeftSide";
 import MainRightSide from "./MainRightSide";
 
-function Main() {
+export default function Main() {
     return (
         <main>
             <MainLeftSide />
@@ -11,4 +11,3 @@ function Main() {
     )
 }
 
-export default Main;
