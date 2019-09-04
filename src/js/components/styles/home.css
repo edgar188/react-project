@@ -2,7 +2,8 @@
     padding: 4%;
     display: table;
     width: 92%;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
+    height: 100vh;
     background-color: #D8BFD8;
     background-image: linear-gradient(#789ce8, #fff);
     text-align: center;

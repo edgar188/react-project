@@ -13,22 +13,32 @@ header img {
   width: 80px;
 }
 
+header h1 {margin-top: 5px;}
+
 header button {
   display: inline-block;
   border: 1px solid silver;
-  background-color: #3B597F;
-  border-radius: 3px;
+  background-color: #fff;
+  border-radius: 5px;
   width: 110px;
   cursor: pointer;
   font-size: 14px;
-  color: #fff;
+  color: #555;
   padding: 5px;
+  margin-top: 5px;
+  margin-right: 20px;
+  font-weight: bold;
 }
 
 header button:hover {
-  border-color: #fff;
+  background-color: #4CAF50;
+  color: #fff;
 }
 
+header button:active {
+  background-color: blue;
+  color: #fff;
+}
 
 .contactForm {
   position: absolute;
@@ -57,11 +67,11 @@ header button:hover {
 }
 
 @-webkit-keyframes mymove {
-  50% {box-shadow: 10px 20px 30px red;}
+  50% {box-shadow: 10px 20px 30px blue;}
 }
 
 @keyframes mymove {
-  50% {box-shadow: 10px 20px 30px red;}
+  50% {box-shadow: 10px 20px 30px blue;}
 }
 
 .contactFormContent {
@@ -90,3 +100,4 @@ header button:hover {
 .formCloseIcon:hover {
   color: #3B597F;
 }
+

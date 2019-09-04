@@ -17,7 +17,7 @@ body {
 main {
   display: table;
   padding: 2%;
-  height: -webkit-fill-available;
+  height: calc(100vh - 240px);
   background-color: #dfe3ee;
   background-image: url("./img/mainBG.jpeg");
 }

@@ -4,9 +4,7 @@ footer {
   color: #fff;
   text-align: center;
   font-size: 14px;
-  padding-bottom: 5px;
 }
-
 
 #footerContent {
   display: flex;
@@ -29,14 +27,13 @@ footer p {
 #github {
   display: flex;
   justify-content: space-around;
-  max-width: 70%;
+  max-width: 35%;
   margin: 8px auto 10px auto;
 }
 
 #textToAdmin {
  margin-top: 6px;
 }
-
 
 #github img {
   width: 25px;
