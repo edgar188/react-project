@@ -33,19 +33,19 @@ export default function Home() {
             <div id="homeWrapper">
                 <UserWelcome />
                 <div id="refSection">
-                    <Link to="https://edgar188.github.io/Home">
+                    <Link to="/Home">
                         <img src={backToHome} alt="Back To Home" />
                     </Link>
-                    <Link to="https://edgar188.github.io/Home/SendText">
+                    <Link to="/Home/SendText">
                         <img src={mySendMsg} alt="Send Message" />
                     </Link>
-                    <Link to="https://edgar188.github.io/Home/MessagesToMe">
+                    <Link to="/Home/MessagesToMe">
                         <img src={msgToMe} alt="Messages To ME" />
                     </Link>
-                    <Link to="https://edgar188.github.io/Home/MessagesFromMe">
+                    <Link to="/Home/MessagesFromMe">
                         <img src={sendText} alt="My Sent Messages" />
                     </Link>
-                    <Link to="https://edgar188.github.io/Home/Vote">
+                    <Link to="/Home/Vote">
                         <img src={voteBG} alt ="Vote" />
                     </Link>
                 </div>
