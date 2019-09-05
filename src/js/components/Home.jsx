@@ -33,29 +33,29 @@ export default function Home() {
             <div id="homeWrapper">
                 <UserWelcome />
                 <div id="refSection">
-                    <Link to={process.env.PUBLIC_URL +"/Home"}>
+                    <Link to="/Home">
                         <img src={backToHome} alt="Back To Home" />
                     </Link>
-                    <Link to={process.env.PUBLIC_URL+"/Home/SendText"}>
+                    <Link to="/Home/SendText">
                         <img src={mySendMsg} alt="Send Message" />
                     </Link>
-                    <Link to={process.env.PUBLIC_URL+"/Home/MessagesToMe"}>
+                    <Link to="/Home/MessagesToMe">
                         <img src={msgToMe} alt="Messages To ME" />
                     </Link>
-                    <Link to={process.env.PUBLIC_URL +"/Home/MessagesFromMe"}>
+                    <Link to="/Home/MessagesFromMe">
                         <img src={sendText} alt="My Sent Messages" />
                     </Link>
-                    <Link to={process.env.PUBLIC_URL +"/Home/Vote"}>
+                    <Link to="/Home/Vote">
                         <img src={voteBG} alt ="Vote" />
                     </Link>
                 </div>
 
                 <Switch>
-                    <Route path={process.env.PUBLIC_URL+"/Home/SendText"} component={SendText} />
-                    <Route path={process.env.PUBLIC_URL+"/Home/MessagesFromMe"} component={MessagesFromMe} />
-                    <Route path={process.env.PUBLIC_URL+"/Home/MessagesToMe"} component={MessagesToMe} />
-                    <Route path={process.env.PUBLIC_URL+"/Home/Vote"} component={Vote} />
-                    <Route path={process.env.PUBLIC_URL+"/Home"} component={HomeArticle} />
+                    <Route path="/Home/SendText" component={SendText} />
+                    <Route path="/Home/MessagesFromMe" component={MessagesFromMe} />
+                    <Route path="/Home/MessagesToMe" component={MessagesToMe} />
+                    <Route path="/Home/Vote" component={Vote} />
+                    <Route path="/Home" component={HomeArticle} />
                 </Switch>
             </div>
         </Router>

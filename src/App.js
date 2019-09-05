@@ -14,11 +14,10 @@ export default function App() {
     <div className="App">
       <Router history={history}>
         <Header />
-        {console.log(history)}
         <Switch> 
-          <Route path={process.env.PUBLIC_URL+"/Home"} component={Home} />
-          <Route path={process.env.PUBLIC_URL+"/Admin"} component={Admin} />
-          <Route path={process.env.PUBLIC_URL+"/"} component={Main} />
+            <Route path="/Home" component={Home} />
+            <Route path="/Admin" component={Admin} />
+            <Route path="/" component={Main} />
         </Switch>
         <Footer />
       </Router>
