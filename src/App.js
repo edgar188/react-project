@@ -15,9 +15,9 @@ export default function App() {
       <Router history={history}>
         <Header />
         <Switch>
-            <Route path="git/Home" component={Home} />
-            <Route path="git/Admin" component={Admin} />
-            <Route path="git/" component={Main} />
+            <Route path="/Home" component={Home} />
+            <Route path="/Admin" component={Admin} />
+            <Route path="/" component={Main} />
         </Switch>
         <Footer />
       </Router>
