@@ -15,9 +15,9 @@ export default function App() {
       <Router history={history}>
         <Header />
         <Switch>
-            <Route path="/Home" component={Home} />
-            <Route path="/Admin" component={Admin} />
-            <Route path="/" component={Main} />
+            <Route path="https://edgar188.github.io/Home" component={Home} />
+            <Route path="https://edgar188.github.io/Admin" component={Admin} />
+            <Route path="https://edgar188.github.io/" component={Main} />
         </Switch>
         <Footer />
       </Router>

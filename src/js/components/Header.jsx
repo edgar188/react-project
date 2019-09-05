@@ -15,7 +15,7 @@ export default function Header() {
 
     return (
         <header>
-            <Link to="/"><img src={logo} alt="LOGO" /></Link>
+            <Link to="https://edgar188.github.io/"><img src={logo} alt="LOGO" /></Link>
             <h1>INFORMATION PLATFORM</h1>
             <div id="textToAdmin">
                 <button onClick={swtichToggle}>CONTACT US</button>
