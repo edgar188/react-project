@@ -29,7 +29,7 @@ export default function Home() {
     }, [null]);
 
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div id="homeWrapper">
                 <UserWelcome />
                 <div id="refSection">

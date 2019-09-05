@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { Router, Route, Switch } from "react-router-dom";
+import {Router, Route, Switch } from "react-router-dom";
 import history from './js/routh/history';
 import Header from "./js/components/Header";
 import Footer from "./js/components/Footer";
@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Router history={history}>
+      <Router history={history} basename={process.env.PUBLIC_URL}>
         <Header />
         <Switch> 
             <Route path="/Home" component={Home} />
