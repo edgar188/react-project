@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Router history={history} basename={process.env.PUBLIC_URL}>
+      <Router history={history}>
         <Header />
         <Switch> 
             <Route path="/Home" component={Home} />

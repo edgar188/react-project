@@ -29,8 +29,7 @@ export default function Home() {
     }, [null]);
 
     return (
-        <Router basename={process.env.PUBLIC_URL}>
-            
+        <Router>
             <div id="homeWrapper">
                 <UserWelcome />
                 <div id="refSection">
@@ -50,7 +49,6 @@ export default function Home() {
                         <img src={voteBG} alt ="Vote" />
                     </Link>
                 </div>
-
                 <Switch>
                     <Route path="/Home/SendText" component={SendText} />
                     <Route path="/Home/MessagesFromMe" component={MessagesFromMe} />
